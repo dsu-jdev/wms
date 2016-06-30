@@ -1,3 +1,5 @@
+#include "menu.h"
+
 using namespace std;
 
 void menu() {
@@ -9,4 +11,32 @@ void menu() {
 	cout << "5. Sua thong tin mat hang" << endl;
 	cout << "6. Cap nhat mat hang moi" << endl;
 	cout << "7. Thoat chuong trinh" << endl;
+
+	int input;
+	cin >> input;
+
+	switch (input) {
+	case 1:
+		search();
+		break;
+	case 2:
+		addNew();
+		break;
+	case 3:
+		del();
+		break;
+	case 4:
+		viewInfo();
+		break;
+	case 5:
+		edit();
+		break;
+	case 6:
+		update();
+		break;
+	case 7:
+		exit(0);
+		break;
+	}
+	menu();
 }
