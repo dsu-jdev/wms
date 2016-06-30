@@ -1,12 +1,12 @@
 #ifndef MENU_H_
 #define MENU_H_
 
-#include "addNew.h"
-#include "del.h"
-#include "edit.h"
-#include "search.h"
-#include "update.h"
-#include "viewInfo.h"
+#include "core/addNew.h"
+#include "core/del.h"
+#include "core/edit.h"
+#include "core/search.h"
+#include "core/update.h"
+#include "core/viewInfo.h"
 
 #include <cstdlib>
 #include <iostream>
