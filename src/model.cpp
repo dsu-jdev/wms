@@ -4,6 +4,7 @@ list<Item> listOfItems;
 
 void loadData(char *fileName) {
 	try {
+		listOfItems.clear();
 		ifstream ifs(fileName);
 		int id;
 		while (ifs >> id) {
@@ -28,5 +29,6 @@ Item getItemById(int id) {
 		}
 	}
 	Item temp;
+	temp.id = -1;
 	return temp;
 }

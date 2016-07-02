@@ -19,6 +19,5 @@ void search() {
 		}
 	}
 	cout << "Tim duoc " << count << " mat hang voi tu khoa \"" << query << "\"" << endl;
-	cin.get();
 	return;
 }

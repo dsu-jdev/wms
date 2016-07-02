@@ -18,6 +18,7 @@ void menu() {
 	switch (input) {
 	case 1:
 		search();
+		cin.get();
 		break;
 	case 2:
 		addNew();

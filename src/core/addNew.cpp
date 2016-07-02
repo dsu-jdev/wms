@@ -23,6 +23,7 @@ void addNew() {
 	ofs << item.name << endl;
 	ofs << item.quantity << endl;
 	ofs.close();
+
 	cout << "Nhap tiep? (Y/N): ";
 	cin.ignore();
 	char c = cin.get();
