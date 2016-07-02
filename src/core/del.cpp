@@ -1,4 +1,4 @@
-#include "del.h"
+#include "../header/del.h"
 
 void del() {
 	search();

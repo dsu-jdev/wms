@@ -1,4 +1,4 @@
-#include "addNew.h"
+#include "../header/addNew.h"
 
 void addNew() {
 	cout << "Ten mat hang: ";
@@ -23,6 +23,8 @@ void addNew() {
 	ofs << item.name << endl;
 	ofs << item.quantity << endl;
 	ofs.close();
+
+
 
 	cout << "Nhap tiep? (Y/N): ";
 	cin.ignore();

@@ -1,4 +1,4 @@
-#include "viewInfo.h"
+#include "../header/viewInfo.h"
 
 void viewInfo() {
 	cout << "Ma MH | Ten mat hang | So luong" << endl;
