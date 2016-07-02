@@ -3,7 +3,7 @@
 void addNew() {
 	cout << "Ten mat hang: ";
 	string name;
-	__fpurge(stdin);
+	cin.ignore();;
 	getline(cin, name);
 	cout << "So luong: ";
 	int quantity;
@@ -13,7 +13,7 @@ void addNew() {
 	Item item;
 
 	item.id = lastItem.id + 1;
-	item.name = replaceAll(name, " ", "-");
+	item.name = name;
 	item.quantity = quantity;
 	listOfItems.push_back(item);
 
@@ -24,7 +24,7 @@ void addNew() {
 	ofs << item.quantity << endl;
 	ofs.close();
 	cout << "Nhap tiep? (Y/N): ";
-	__fpurge(stdin);
+	cin.ignore();
 	char c = cin.get();
 	if (c == 'y' || c == 'Y') {
 		addNew();
