@@ -26,6 +26,6 @@ extern list<Item> items;
 
 void loadData(char *);
 Item getItemById(int);
-string replaceAll(string, string, string);
+const string currentDateTime();
 
 #endif /* MODEL_H_ */

@@ -1,5 +1,7 @@
 #include "../header/addNew.h"
 
+Bill billImport;
+
 void addNew() {
 	cout << "Ten mat hang: ";
 	string name;
@@ -24,7 +26,8 @@ void addNew() {
 	ofs << item.quantity << endl;
 	ofs.close();
 
-
+	billImport.type = 1;
+	billImport.items.push_back(item);
 
 	cout << "Nhap tiep? (Y/N): ";
 	cin.ignore();
@@ -32,6 +35,8 @@ void addNew() {
 	if (c == 'y' || c == 'Y') {
 		addNew();
 	} else {
+		billImport.date = currentDateTime();
+		bills.push_back(billImport);
 		return;
 	}
 }

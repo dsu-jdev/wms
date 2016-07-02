@@ -1,7 +1,7 @@
 #ifndef HEADER_SEARCH_H_
 #define HEADER_SEARCH_H_
 
-#include "..//model.h"
+#include "../model.h"
 
 void search();
 
