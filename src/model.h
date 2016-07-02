@@ -18,11 +18,11 @@ struct Item {
 // hoa don nhap, xuat hang
 struct Bill {
 	int type; // kieu hoa don, type = 1: hoa don nhap hang, type = 2: hoa don xuat hang
-	Item items[]; // danh sach cac mat hang
+	list<Item> items; // danh sach cac mat hang
 	string date; // ngay thang nhap, xuat
 };
 
-extern list<Item> listOfItems;
+extern list<Item> items;
 
 void loadData(char *);
 Item getItemById(int);

@@ -1,10 +1,10 @@
 #include "model.h"
 
-list<Item> listOfItems;
+list<Item> items;
 
 void loadData(char *fileName) {
 	try {
-		listOfItems.clear();
+		items.clear();
 		ifstream ifs(fileName);
 		int id;
 		while (ifs >> id) {
@@ -13,7 +13,7 @@ void loadData(char *fileName) {
 			ifs.ignore();
 			getline(ifs, item.name);
 			ifs >> item.quantity;
-			listOfItems.push_back(item);
+			items.push_back(item);
 		}
 	}catch(const std::exception &exc) {
 		cerr << exc.what();
@@ -22,7 +22,7 @@ void loadData(char *fileName) {
 
 Item getItemById(int id) {
 	list<Item>::iterator it;
-	for (it = listOfItems.begin(); it != listOfItems.end(); it++) {
+	for (it = items.begin(); it != items.end(); it++) {
 		Item i = *it;
 		if (i.id == id) {
 			return i;

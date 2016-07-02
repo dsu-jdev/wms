@@ -9,13 +9,13 @@ void addNew() {
 	int quantity;
 	cin >> quantity;
 
-	Item lastItem = listOfItems.back();
+	Item lastItem = items.back();
 	Item item;
 
 	item.id = lastItem.id + 1;
 	item.name = name;
 	item.quantity = quantity;
-	listOfItems.push_back(item);
+	items.push_back(item);
 
 	fstream ofs;
 	ofs.open("src//input.txt", fstream::in | fstream::out | fstream::app);

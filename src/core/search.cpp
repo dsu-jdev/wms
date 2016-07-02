@@ -9,7 +9,7 @@ void search() {
 	getline(cin, query);
 	int count = 0;
 	list<Item>::iterator it;
-	for (it = listOfItems.begin(); it != listOfItems.end(); it++) {
+	for (it = items.begin(); it != items.end(); it++) {
 		Item item = *it;
 		if ((int) item.name.find(query) != -1) {
 			cout << "Ma mat hang:	" << item.id << endl;
