@@ -26,5 +26,6 @@ Item getItemById(int id) {
 			return i;
 		}
 	}
-	return NULL;
+	Item temp;
+	return temp;
 }

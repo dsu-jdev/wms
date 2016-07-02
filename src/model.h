@@ -21,6 +21,8 @@ struct Bill {
 	string date; // ngay thang nhap, xuat
 };
 
+extern list<Item> listOfItems;
+
 void loadData(char *);
 Item getItemById(int);
 
