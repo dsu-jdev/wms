@@ -22,7 +22,7 @@ void search() {
 		Item item = *it;
 		if ((int) item.name.find(qr) != -1) {
 			cout << "Ma mat hang:	" << item.id << endl;
-			cout << "Ten mat hang:	" << item.name << endl;
+			cout << "Ten mat hang:	" << replaceAll(item.name, "-", " ") << endl;
 			cout << "So luong:	" << item.quantity << endl << endl;
 			count++;
 		}
