@@ -1,7 +1,7 @@
 #ifndef EDIT_H_
 #define EDIT_H_
 
-#include <iostream>
+#include "../model.h"
 
 void edit();
 
