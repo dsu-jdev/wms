@@ -10,7 +10,8 @@ void menu() {
 	cout << "4. Xem thong tin cac mat hang" << endl;
 	cout << "5. Sua thong tin mat hang" << endl;
 	cout << "6. Cap nhat mat hang moi" << endl;
-	cout << "7. Thoat chuong trinh" << endl;
+	cout << "7. Xem hoa don" << endl;
+	cout << "8. Thoat chuong trinh" << endl;
 
 	int input;
 	cin >> input;
@@ -36,6 +37,9 @@ void menu() {
 		update();
 		break;
 	case 7:
+		viewBills();
+		break;
+	case 8:
 		exit(0);
 		break;
 	}

@@ -5,4 +5,6 @@
 
 extern list<Bill> bills;
 
+void viewBills();
+
 #endif /* HEADER_BILL_H_ */

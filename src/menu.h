@@ -2,6 +2,7 @@
 #define MENU_H_
 
 #include "header/addNew.h"
+#include "header/bill.h"
 #include "header/del.h"
 #include "header/edit.h"
 #include "header/search.h"
