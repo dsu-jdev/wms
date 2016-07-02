@@ -1,8 +1,8 @@
-#ifndef SEARCH_H_
-#define SEARCH_H_
+#ifndef CORE_SEARCH_H_
+#define CORE_SEARCH_H_
 
 #include "..//model.h"
 
 void search();
 
-#endif /* SEARCH_H_ */
+#endif /* CORE_SEARCH_H_ */

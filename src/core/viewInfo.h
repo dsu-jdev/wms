@@ -1,8 +1,8 @@
-#ifndef VIEWINFO_H_
-#define VIEWINFO_H_
+#ifndef CORE_VIEWINFO_H_
+#define CORE_VIEWINFO_H_
 
 #include "../model.h"
 
 void viewInfo();
 
-#endif /* VIEWINFO_H_ */
+#endif /* CORE_VIEWINFO_H_ */

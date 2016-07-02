@@ -1,9 +1,9 @@
-#ifndef DEL_H_
-#define DEL_H_
+#ifndef CORE_DEL_H_
+#define CORE_DEL_H_
 
 #include "..//model.h"
 #include "search.h"
 
 void del();
 
-#endif /* DEL_H_ */
+#endif /* CORE_DEL_H_ */

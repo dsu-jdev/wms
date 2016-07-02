@@ -1,8 +1,8 @@
-#ifndef UPDATE_H_
-#define UPDATE_H_
+#ifndef CORE_UPDATE_H_
+#define CORE_UPDATE_H_
 
 #include <iostream>
 
 void update();
 
-#endif /* UPDATE_H_ */
+#endif /* CORE_UPDATE_H_ */
