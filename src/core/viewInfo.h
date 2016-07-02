@@ -1,7 +1,7 @@
 #ifndef VIEWINFO_H_
 #define VIEWINFO_H_
 
-#include <iostream>
+#include "../model.h"
 
 void viewInfo();
 
