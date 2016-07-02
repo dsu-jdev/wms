@@ -1,14 +1,9 @@
 #include "menu.h"
-
-#include <iostream>
+#include "model.h"
 
 using namespace std;
 
-void loadData(string fileName) {
-	ifstream ifs(fileName);
-}
-
 int main(int argc, char **argv) {
-	loadData("input.txt");
+	loadData("src//input.txt");
 	menu();
 }

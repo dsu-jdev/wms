@@ -1,17 +1,30 @@
 #include "model.h"
 
-using namespace std;
+list<Item> listOfItems;
 
-// mat hang
-struct Item {
-	int id; // ma mat hang
-	string name; // ten mat hang
-	int quantity; // so luong
-};
+void loadData(char *fileName) {
+	try {
+		ifstream ifs(fileName);
+		int id;
+		while (ifs >> id) {
+			Item item;
+			item.id = id;
+			ifs >> item.name;
+			ifs >> item.quantity;
+			listOfItems.push_back(item);
+		}
+	}catch(const std::exception &exc) {
+		cerr << exc.what();
+	}
+}
 
-// hoa don nhap, xuat hang
-struct Bill {
-	int type; // kieu hoa don, type = 1: hoa don nhap hang, type = 2: hoa don xuat hang
-	Item items[]; // danh sach cac mat hang
-	string date; // ngay thang nhap, xuat
-};
+Item getItemById(int id) {
+	list<Item>::iterator it;
+	for (it = listOfItems.begin(); it != listOfItems.end(); it++) {
+		Item i = *it;
+		if (i.id == id) {
+			return i;
+		}
+	}
+	return NULL;
+}
