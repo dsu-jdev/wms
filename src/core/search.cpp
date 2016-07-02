@@ -2,14 +2,6 @@
 
 using namespace std;
 
-string replaceAll(string str, string s, string t) {
-	int pos;
-	while ((pos = str.find(s)) != -1) {
-		str.replace(pos, 1, t);
-	}
-	return str;
-}
-
 void search() {
 	cout << "Nhap chuoi tim kiem: ";
 	string query;
@@ -27,5 +19,8 @@ void search() {
 			count++;
 		}
 	}
-	cout << "Tim duoc " << count << " mat hang voi tu khoa \"" << query << "\"" << endl << endl;
+	cout << "Tim duoc " << count << " mat hang voi tu khoa \"" << query << "\"" << endl;
+	__fpurge(stdin);
+	cin.get();
+	return;
 }

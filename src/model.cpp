@@ -29,3 +29,11 @@ Item getItemById(int id) {
 	Item temp;
 	return temp;
 }
+
+string replaceAll(string str, string s, string t) {
+	int pos;
+	while ((pos = str.find(s)) != -1) {
+		str.replace(pos, 1, t);
+	}
+	return str;
+}

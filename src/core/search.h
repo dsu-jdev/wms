@@ -3,10 +3,6 @@
 
 #include "..//model.h"
 
-#include <iostream>
-#include <stdio_ext.h>
-#include <string>
-
 void search();
 
 #endif /* SEARCH_H_ */

@@ -4,6 +4,8 @@
 #include <fstream>
 #include <iostream>
 #include <list>
+#include <stdio_ext.h>
+#include <string>
 
 using namespace std;
 
@@ -25,5 +27,6 @@ extern list<Item> listOfItems;
 
 void loadData(char *);
 Item getItemById(int);
+string replaceAll(string, string, string);
 
 #endif /* MODEL_H_ */
