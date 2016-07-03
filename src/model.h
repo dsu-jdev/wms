@@ -2,6 +2,7 @@
 #define MODEL_H_
 
 #include <fstream>
+#include <iomanip>
 #include <iostream>
 #include <list>
 #include <string>
@@ -27,6 +28,7 @@ extern list<Item> items;
 
 void loadData(char *);
 Item getItemById(int);
+void printItem(Item);
 const string currentDateTime();
 
 #endif /* MODEL_H_ */

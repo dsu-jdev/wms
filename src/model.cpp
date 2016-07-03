@@ -33,6 +33,17 @@ Item getItemById(int id) {
 	return temp;
 }
 
+void printItem(list<Item> items) {
+	cout << "Ma MH |         Ten mat hang           | So luong" << endl;
+	cout << "------+--------------------------------+---------" << endl;
+	list<Item>::iterator iterItem;
+	for (iterItem = items.begin(); iterItem != items.end(); iterItem++) {
+		Item item = *iterItem;
+		cout << setw(4) << right << item.id << "  | " << setw(30) << left << item.name << " | " << setw(7) << right << item.quantity << endl;
+	}
+	cout << endl;
+}
+
 const string currentDateTime() {
     time_t now = time(0);
     struct tm tstruct;

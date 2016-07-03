@@ -7,7 +7,7 @@
 #include "header/edit.h"
 #include "header/search.h"
 #include "header/update.h"
-#include "header/viewInfo.h"
+#include "header/viewAllItems.h"
 
 #include <cstdlib>
 #include <iostream>
