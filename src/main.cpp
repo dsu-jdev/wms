@@ -4,6 +4,6 @@
 using namespace std;
 
 int main(int argc, char **argv) {
-	loadData("src//input.txt");
+	loadItemData("src//input.txt");
 	menu();
 }

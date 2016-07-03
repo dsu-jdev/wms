@@ -2,7 +2,7 @@
 
 list<Item> items;
 
-void loadData(char *fileName) {
+void loadItemData(char *fileName) {
 	try {
 		items.clear();
 		ifstream ifs(fileName);
@@ -15,7 +15,35 @@ void loadData(char *fileName) {
 			ifs >> item.quantity;
 			items.push_back(item);
 		}
-	}catch(const std::exception &exc) {
+	} catch (const std::exception &exc) {
+		cerr << exc.what();
+	}
+}
+
+void loadBillData(char *fileName) {
+	try {
+		bills.clear();
+		ifstream ifs(fileName);
+		int type;
+		while (ifs >> type) {
+			Bill bill;
+			bill.type = type;
+			ifs >> bill.id;
+			int itemId;
+			ifs >> itemId;
+			while (itemId != -1) {
+				Item item;
+				item.id = itemId;
+				ifs.ignore();
+				getline(ifs, item.name);
+				ifs >> item.quantity;
+				bill.items.push_back(item);
+				ifs >> itemId;
+			}
+			ifs.ignore();
+			getline(ifs, bill.date);
+		}
+	} catch (const exception &exc) {
 		cerr << exc.what();
 	}
 }
@@ -41,7 +69,6 @@ void printItem(list<Item> items) {
 		Item item = *iterItem;
 		cout << setw(4) << right << item.id << "  | " << setw(30) << left << item.name << " | " << setw(7) << right << item.quantity << endl;
 	}
-	cout << endl;
 }
 
 const string currentDateTime() {

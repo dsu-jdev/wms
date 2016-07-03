@@ -26,9 +26,10 @@ struct Bill {
 
 extern list<Item> items;
 
-void loadData(char *);
+void loadItemData(char *);
+void loadBillData(char *);
 Item getItemById(int);
-void printItem(Item);
+void printItem(list<Item>);
 const string currentDateTime();
 
 #endif /* MODEL_H_ */

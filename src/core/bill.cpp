@@ -9,14 +9,32 @@ void viewBills() {
 	int input;
 	cin >> input;
 
+	string type;
+	if (input == 1) {
+		type = "nhap";
+	}
+	if (input == 2) {
+		type = "xuat";
+	}
+
+	bool isHaveBill = false;
+
 	list<Bill>::iterator iterBill;
 	for (iterBill = bills.begin(); iterBill != bills.end(); iterBill++) {
 		Bill bill = *iterBill;
 		if (bill.type == input) {
-			cout << "Nhap hang" << endl;
+			isHaveBill = true;
 			cout << "Ma hoa don: " << bill.id << endl;
-			cout << "Ngay nhap: " << bill.date << endl;
+			cout << "Ngay " + type + ": " << bill.date << endl;
 			printItem(bill.items);
 		}
+		cout << endl;
 	}
+
+	if (!isHaveBill) {
+		cout << "Khong co hoa don " + type + " hang";
+	}
+	cin.ignore();
+	cin.get();
+	return;
 }
