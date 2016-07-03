@@ -66,7 +66,7 @@ void del() {
 	billExport.items.push_back(itemToDelete);
 
 	cout << "Xoa tiep? (Y/N): ";
-	cin.ignore();
+	__fpurge(stdin);
 	char c = cin.get();
 	if (c == 'y' || c == 'Y') {
 		del();

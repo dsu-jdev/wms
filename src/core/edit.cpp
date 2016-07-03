@@ -13,7 +13,7 @@ void edit() {
 
 	cout << "Ten mat hang: \"" << itemToEdit.name << "\" > ";
 	string nameToEdit;
-	cin.ignore();
+	__fpurge(stdin);
 	getline(cin, nameToEdit);
 
 	cout << "So luong: \"" << itemToEdit.quantity << "\" > ";
@@ -46,7 +46,7 @@ void edit() {
 	loadItem("src//input.txt");
 
 	cout << "Sua tiep? (Y/N): ";
-	cin.ignore();
+	__fpurge(stdin);
 	char c = cin.get();
 	if (c == 'y' || c == 'Y') {
 		edit();

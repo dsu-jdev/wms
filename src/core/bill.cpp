@@ -32,7 +32,7 @@ void viewBills() {
 	if (!isHaveBill) {
 		cout << "Khong co hoa don " + type + " hang";
 	}
-	cin.ignore();
+	__fpurge(stdin);
 	cin.get();
 	return;
 }

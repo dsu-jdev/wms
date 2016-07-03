@@ -5,8 +5,7 @@ using namespace std;
 void search() {
 	cout << "Nhap chuoi tim kiem: ";
 	string query;
-//	__fpurge(stdin);
-	cin.ignore(256, '\n');
+	__fpurge(stdin);
 	getline(cin, query);
 	int count = 0;
 	list<Item>::iterator it;
