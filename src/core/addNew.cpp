@@ -5,16 +5,21 @@ Bill billImport;
 void addNew() {
 	cout << "Ten mat hang: ";
 	string name;
-	cin.ignore();;
+	cin.ignore();
 	getline(cin, name);
 	cout << "So luong: ";
 	int quantity;
 	cin >> quantity;
 
-	Item lastItem = items.back();
 	Item item;
 
-	item.id = lastItem.id + 1;
+	if (items.empty()) {
+		item.id = 1;
+	} else {
+		Item lastItem = items.back();
+		item.id = lastItem.id + 1;
+	}
+
 	item.name = name;
 	item.quantity = quantity;
 	items.push_back(item);
@@ -25,6 +30,13 @@ void addNew() {
 	ofs << item.name << endl;
 	ofs << item.quantity << endl;
 	ofs.close();
+
+	if (bills.empty()) {
+		billImport.id = 1;
+	} else {
+		Bill lastBill = bills.back();
+		billImport.id = lastBill.id + 1;
+	}
 
 	billImport.type = 1;
 	billImport.items.push_back(item);

@@ -6,7 +6,10 @@ void viewBills() {
 	list<Bill>::iterator it;
 	for (it = bills.begin(); it != bills.end(); it++) {
 		Bill b = *it;
-		cout << b.type << endl;
+		if (b.type == 1) {
+			cout << "Nhap hang" << endl;
+		}
+		cout << b.id << endl;
 		cout << b.date << endl;
 	}
 }
