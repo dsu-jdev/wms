@@ -7,11 +7,10 @@ void menu() {
 	cout << "1. Tim kiem mat hang" << endl;
 	cout << "2. Nhap them mat hang" << endl;
 	cout << "3. Xoa mat hang" << endl;
-	cout << "4. Xem thong tin cac mat hang" << endl;
-	cout << "5. Sua thong tin mat hang" << endl;
-	cout << "6. Cap nhat mat hang moi" << endl;
-	cout << "7. Xem hoa don" << endl;
-	cout << "8. Thoat chuong trinh" << endl;
+	cout << "4. Sua thong tin mat hang" << endl;
+	cout << "5. Xem thong tin cac mat hang" << endl;
+	cout << "6. Xem hoa don" << endl;
+	cout << "7. Thoat chuong trinh" << endl;
 
 	int input;
 	cin >> input;
@@ -28,18 +27,15 @@ void menu() {
 		del();
 		break;
 	case 4:
-		viewInfo();
-		break;
-	case 5:
 		edit();
 		break;
-	case 6:
-		update();
+	case 5:
+		viewAllItems();
 		break;
-	case 7:
+	case 6:
 		viewBills();
 		break;
-	case 8:
+	case 7:
 		exit(0);
 		break;
 	}

@@ -3,6 +3,6 @@
 
 #include "../model.h"
 
-void viewInfo();
+void viewAllItems();
 
 #endif /* HEADER_VIEWALLITEMS_H_ */

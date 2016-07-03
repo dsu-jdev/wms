@@ -2,7 +2,6 @@
 #define HEADER_ADDNEW_H_
 
 #include "../model.h"
-#include "bill.h"
 
 void addNew();
 

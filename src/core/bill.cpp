@@ -1,7 +1,5 @@
 #include "../header/bill.h"
 
-list<Bill> bills;
-
 void viewBills() {
 	cout << "	1. Hoa don nhap hang" << endl;
 	cout << "	2. Hoa don xuat hang" << endl;

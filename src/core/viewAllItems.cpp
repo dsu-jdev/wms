@@ -1,8 +1,8 @@
 #include "../header/viewAllItems.h"
 
-void viewInfo() {
+void viewAllItems() {
 	printItem(items);
-	cin.ignore();
+	__fpurge(stdin);
 	cin.get();
 	return;
 }

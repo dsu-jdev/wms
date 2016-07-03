@@ -43,7 +43,7 @@ void edit() {
 	remove("src//input.txt");
 	rename("src//temp.txt", "src//input.txt");
 	cout << "Sua thong tin mat hang thanh cong" << endl;
-	loadItemData("src//input.txt");
+	loadItem("src//input.txt");
 
 	cout << "Sua tiep? (Y/N): ";
 	cin.ignore();

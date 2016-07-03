@@ -1,8 +1,9 @@
 #include "model.h"
 
 list<Item> items;
+list<Bill> bills;
 
-void loadItemData(char *fileName) {
+void loadItem(char *fileName) {
 	try {
 		items.clear();
 		ifstream ifs(fileName);
@@ -20,7 +21,7 @@ void loadItemData(char *fileName) {
 	}
 }
 
-void loadBillData(char *fileName) {
+void loadBill(char *fileName) {
 	try {
 		bills.clear();
 		ifstream ifs(fileName);
@@ -46,6 +47,11 @@ void loadBillData(char *fileName) {
 	} catch (const exception &exc) {
 		cerr << exc.what();
 	}
+}
+
+void loadData() {
+	loadItem("src//input.txt");
+	loadBill("src//bills.txt");
 }
 
 Item getItemById(int id) {

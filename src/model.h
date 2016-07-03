@@ -5,6 +5,7 @@
 #include <iomanip>
 #include <iostream>
 #include <list>
+#include <stdio_ext.h>
 #include <string>
 
 using namespace std;
@@ -25,9 +26,11 @@ struct Bill {
 };
 
 extern list<Item> items;
+extern list<Bill> bills;
 
-void loadItemData(char *);
-void loadBillData(char *);
+void loadItem(char *);
+void loadBill(char *);
+void loadData();
 Item getItemById(int);
 void printItem(list<Item>);
 const string currentDateTime();
